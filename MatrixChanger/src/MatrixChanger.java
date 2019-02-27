@@ -151,12 +151,15 @@ public class MatrixChanger {
     public void printMatrix() {
         int rows = matrix.length;
         int columns = matrix[0].length;
+        String outputMatrix=new String("\n");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                System.out.print(matrix[i][j] + " ");
+                outputMatrix+=matrix[i][j] + " ";
             }
-            System.out.println();
+            outputMatrix+='\n';
         }
+
+        LOGGER.info(outputMatrix);
 
     }
 
