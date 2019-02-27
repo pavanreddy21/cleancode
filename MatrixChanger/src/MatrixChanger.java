@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.util.logging.Logger;
 
+import static java.lang.System.exit;
+
 public class MatrixChanger {
 
     static final Logger LOGGER = Logger.getLogger(MatrixChanger.class.getName());
@@ -17,6 +19,10 @@ public class MatrixChanger {
         int rows = s.nextInt();
         LOGGER.info("Enter the number of columns in the matrix");
         int columns = s.nextInt();
+        if(rows<=0||columns<=0){
+            LOGGER.warning("Matrix rows and columns should be positive");
+            exit(0);
+        }
         LOGGER.info("Enter the matrix:");
         int[][] inputMatrix = new int[rows][columns];
         for (int i = 0; i < rows; i++) {
