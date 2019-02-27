@@ -102,7 +102,7 @@ public class MatrixChanger {
 
 
     /**
-     * This method changes the matrix and makes the elements zero based on the first row and column (Flags)
+     * This method changes the matrix and makes the elements zero based on the first row and column (Flags set using setFlagFirstRowAndColumn method)
      */
     public void changeRemainingMatrix() {
         int rows = matrix.length;
@@ -161,3 +161,4 @@ public class MatrixChanger {
     }
 
 }
+
