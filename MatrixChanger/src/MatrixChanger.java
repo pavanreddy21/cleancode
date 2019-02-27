@@ -59,7 +59,7 @@ public class MatrixChanger {
      * @return
      */
     public boolean checkRowForZero(int row) {
-        for (int i = 0; i < matrix.length; i++) {
+        for (int i = 0; i < matrix[0].length; i++) {
             if (matrix[row][i] == 0) {
                 return true;
             }
@@ -75,7 +75,7 @@ public class MatrixChanger {
      * @return
      */
     public boolean checkColumnForZero(int column) {
-        for (int i = 0; i < matrix[0].length; i++) {
+        for (int i = 0; i < matrix.length; i++) {
             if (matrix[i][column] == 0) {
                 return true;
             }
@@ -123,9 +123,9 @@ public class MatrixChanger {
      * @param rowFlag
      */
     public void changeFirstRow(boolean rowFlag) {
-        int rows = matrix.length;
+        int columns = matrix[0].length;
         if (rowFlag) {
-            for (int i = 0; i < rows; i++) {
+            for (int i = 0; i < columns; i++) {
                 matrix[0][i] = 0;
             }
         }
@@ -137,9 +137,9 @@ public class MatrixChanger {
      * @param colFlag
      */
     public void changeFirstColumn(boolean colFlag) {
-        int columns = matrix[0].length;
+        int rows = matrix.length;
         if (colFlag) {
-            for (int i = 0; i < columns; i++) {
+            for (int i = 0; i < rows; i++) {
                 matrix[i][0] = 0;
             }
         }
