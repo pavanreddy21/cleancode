@@ -1,12 +1,20 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-import static java.lang.System.exit;
 
 public class MatrixChanger {
 
     static final Logger LOGGER = Logger.getLogger(MatrixChanger.class.getName());
     private int[][] matrix;
+
+    public int[][] getMatrix() {
+        return matrix;
+    }
+
+    public void setMatrix(int[][] matrix) {
+        this.matrix = matrix;
+    }
 
     /**
      * This method gets the input from user and returns the matrix array
@@ -19,12 +27,8 @@ public class MatrixChanger {
         int rows = s.nextInt();
         LOGGER.info("Enter the number of columns in the matrix");
         int columns = s.nextInt();
-        if(rows<=0||columns<=0){
-            LOGGER.warning("Matrix rows and columns should be positive");
-            exit(0);
-        }
-        LOGGER.info("Enter the matrix:");
         int[][] inputMatrix = new int[rows][columns];
+        LOGGER.info("Enter the matrix:");
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
                 inputMatrix[i][j] = s.nextInt();
@@ -40,14 +44,25 @@ public class MatrixChanger {
      */
     public static void main(String[] arg) {
         MatrixChanger m = new MatrixChanger();
-        m.matrix = getMatrixFromUser();
-        m.changeMatrix();
-        m.printMatrix();
+        try {
+            m.matrix = getMatrixFromUser();
+            m.changeMatrix();
+            m.printMatrix();
+        }
+
+        catch (NegativeArraySizeException e){
+            LOGGER.warning("Please enter the array size possitive");
+        }
+        catch(InputMismatchException ie ){
+            LOGGER.warning("Please enter the input correctly");
+        }
+
     }
 
 
     /**
-     * This method changes the matrix  such that if an element in a matrix is zero, then that entire row and column are set to zero.
+     * This method changes the matrix  such that if an element in a matrix is zero,
+     * then that entire row and column are set to zero.
      */
     public void changeMatrix() {
         boolean firstRowHasZeros = this.checkRowForZero(0);
@@ -166,6 +181,7 @@ public class MatrixChanger {
         LOGGER.info(outputMatrix);
 
     }
+
 
 }
 

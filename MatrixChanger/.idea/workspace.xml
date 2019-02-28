@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2b134343-fb34-4d1e-be41-c4e5373064ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatrixChanger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixChanger.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MatrixChanger/MatrixChanger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MatrixChanger/MatrixChanger.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MatrixChanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatrixChanger.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,11 +16,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MatrixChanger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="174" column="20" lean-forward="true" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
+            <state relative-caret-position="-180">
+              <caret line="45" column="46" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#392#393#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/TestCases.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,11 +60,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/MatrixChanger.java" />
+        <option value="$PROJECT_DIR$/test/TestCases.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="width" value="683" />
+    <option name="width" value="1366" />
     <option name="height" value="734" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -55,6 +74,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -71,12 +91,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551332762617" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551335733650" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -91,17 +114,64 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="MatrixChanger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MatrixChanger" />
+  <component name="RunManager" selected="JUnit.TestCases.testcase5">
+    <configuration name="TestCases.testcase1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MatrixChanger" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCases" />
+      <option name="METHOD_NAME" value="testcase1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCases.testcase2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatrixChanger" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCases" />
+      <option name="METHOD_NAME" value="testcase2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCases.testcase3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatrixChanger" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCases" />
+      <option name="METHOD_NAME" value="testcase3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCases.testcase4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatrixChanger" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCases" />
+      <option name="METHOD_NAME" value="testcase4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCases.testcase5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MatrixChanger" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCases" />
+      <option name="METHOD_NAME" value="testcase5" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MatrixChanger" />
+        <item itemvalue="JUnit.TestCases.testcase5" />
+        <item itemvalue="JUnit.TestCases.testcase4" />
+        <item itemvalue="JUnit.TestCases.testcase3" />
+        <item itemvalue="JUnit.TestCases.testcase2" />
+        <item itemvalue="JUnit.TestCases.testcase1" />
       </list>
     </recent_temporary>
   </component>
@@ -118,11 +188,22 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestCases_testcase1 - 2019.02.28 at 12h 00m 20s.xml">
+      <configuration name="TestCases.testcase1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCases_testcase2 - 2019.02.28 at 12h 02m 05s.xml">
+      <configuration name="TestCases.testcase2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCases_testcase3 - 2019.02.28 at 12h 03m 14s.xml">
+      <configuration name="TestCases.testcase3" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="683" height="734" extended-state="4" />
+    <frame x="0" y="0" width="1366" height="734" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2967033" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30151516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -130,7 +211,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294893" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26359144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -153,8 +234,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MatrixChanger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="174" column="20" lean-forward="true" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
+        <state relative-caret-position="-180">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestCases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
