@@ -2,10 +2,10 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
+class ZeroSizeException extends Exception{}
+public class MatrixZeroHandler {
 
-public class MatrixChanger {
-
-    static final Logger LOGGER = Logger.getLogger(MatrixChanger.class.getName());
+    static final Logger LOGGER = Logger.getLogger(MatrixZeroHandler.class.getName());
     private int[][] matrix;
 
     public int[][] getMatrix() {
@@ -21,7 +21,7 @@ public class MatrixChanger {
      *
      * @return
      */
-    public static int[][] getMatrixFromUser() {
+    public static int[][] getMatrixFromUser() throws ZeroSizeException {
         Scanner s = new Scanner(System.in);
         LOGGER.info("Enter the number of rows in the matrix");
         int rows = s.nextInt();
@@ -34,6 +34,10 @@ public class MatrixChanger {
                 inputMatrix[i][j] = s.nextInt();
             }
         }
+        if(rows==0 || columns==0){
+            throw new ZeroSizeException();
+        }
+
         return inputMatrix;
     }
 
@@ -43,7 +47,7 @@ public class MatrixChanger {
      * @param arg
      */
     public static void main(String[] arg) {
-        MatrixChanger m = new MatrixChanger();
+        MatrixZeroHandler m = new MatrixZeroHandler();
         try {
             m.matrix = getMatrixFromUser();
             m.changeMatrix();
@@ -51,8 +55,13 @@ public class MatrixChanger {
         }
 
         catch (NegativeArraySizeException e){
-            LOGGER.warning("Please enter the array size possitive");
+            LOGGER.warning("Please enter the array size positive");
         }
+
+        catch (ZeroSizeException e){
+            LOGGER.warning("Please enter the array size greater than 0");
+        }
+
         catch(InputMismatchException ie ){
             LOGGER.warning("Please enter the input correctly");
         }

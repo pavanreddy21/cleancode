@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2b134343-fb34-4d1e-be41-c4e5373064ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MatrixChanger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MatrixChanger.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MatrixChanger/MatrixChanger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MatrixChanger/MatrixChanger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MatrixChanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatrixChanger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MatrixChanger/MatrixChanger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/MatrixChanger/TestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/MatrixChanger/TestCases.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MatrixChanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatrixZeroHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestCases.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MatrixChanger.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MatrixZeroHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="45" column="46" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="46" />
+            <state relative-caret-position="120">
+              <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#282#283#0" expanded="true" />
@@ -32,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/TestCases.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+            <state relative-caret-position="300">
+              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,6 +62,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/MatrixChanger.java" />
         <option value="$PROJECT_DIR$/test/TestCases.java" />
+        <option value="$PROJECT_DIR$/src/MatrixZeroHandler.java" />
       </list>
     </option>
   </component>
@@ -99,7 +101,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551335733650" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551336944384" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -114,23 +116,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCases.testcase5">
-    <configuration name="TestCases.testcase1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MatrixZeroHandler">
+    <configuration name="MatrixZeroHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MatrixZeroHandler" />
       <module name="MatrixChanger" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCases" />
-      <option name="METHOD_NAME" value="testcase1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCases.testcase2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MatrixChanger" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestCases" />
-      <option name="METHOD_NAME" value="testcase2" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MatrixZeroHandler" />
+        <item itemvalue="JUnit.TestCases" />
         <item itemvalue="JUnit.TestCases.testcase5" />
         <item itemvalue="JUnit.TestCases.testcase4" />
         <item itemvalue="JUnit.TestCases.testcase3" />
-        <item itemvalue="JUnit.TestCases.testcase2" />
-        <item itemvalue="JUnit.TestCases.testcase1" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +195,15 @@
     </history-entry>
     <history-entry file="TestCases_testcase3 - 2019.02.28 at 12h 03m 14s.xml">
       <configuration name="TestCases.testcase3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCases_testcase4 - 2019.02.28 at 12h 04m 27s.xml">
+      <configuration name="TestCases.testcase4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCases_testcase5 - 2019.02.28 at 12h 05m 37s.xml">
+      <configuration name="TestCases.testcase5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCases - 2019.02.28 at 12h 18m 10s.xml">
+      <configuration name="TestCases" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -232,26 +239,26 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MatrixChanger.java">
+    <entry file="file://$PROJECT_DIR$/test/TestCases.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="46" />
+        <state relative-caret-position="300">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MatrixZeroHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#282#283#0" expanded="true" />
             <element signature="e#311#312#0" expanded="true" />
             <element signature="e#356#357#0" expanded="true" />
             <element signature="e#392#393#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestCases.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
