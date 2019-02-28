@@ -2,19 +2,26 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-class ZeroSizeException extends Exception{}
+
+/**
+ * Auxiliary Space complexity O(1);
+ * No extra space used other than matrix Space.
+ * <p>
+ * <p>
+ * Practices used:
+ * Function should do only one thing
+ * every function is small
+ * Function arguments are less than 3
+ * Function name should be descriptive
+ */
+
+class ZeroSizeException extends Exception {
+}
+
 public class MatrixZeroHandler {
 
     static final Logger LOGGER = Logger.getLogger(MatrixZeroHandler.class.getName());
     private int[][] matrix;
-
-    public int[][] getMatrix() {
-        return matrix;
-    }
-
-    public void setMatrix(int[][] matrix) {
-        this.matrix = matrix;
-    }
 
     /**
      * This method gets the input from user and returns the matrix array
@@ -34,7 +41,7 @@ public class MatrixZeroHandler {
                 inputMatrix[i][j] = s.nextInt();
             }
         }
-        if(rows==0 || columns==0){
+        if (rows == 0 || columns == 0) {
             throw new ZeroSizeException();
         }
 
@@ -52,22 +59,23 @@ public class MatrixZeroHandler {
             m.matrix = getMatrixFromUser();
             m.changeMatrix();
             m.printMatrix();
-        }
-
-        catch (NegativeArraySizeException e){
+        } catch (NegativeArraySizeException e) {
             LOGGER.warning("Please enter the array size positive");
-        }
-
-        catch (ZeroSizeException e){
+        } catch (ZeroSizeException e) {
             LOGGER.warning("Please enter the array size greater than 0");
-        }
-
-        catch(InputMismatchException ie ){
+        } catch (InputMismatchException ie) {
             LOGGER.warning("Please enter the input correctly");
         }
 
     }
 
+    public int[][] getMatrix() {
+        return matrix;
+    }
+
+    public void setMatrix(int[][] matrix) {
+        this.matrix = matrix;
+    }
 
     /**
      * This method changes the matrix  such that if an element in a matrix is zero,
@@ -78,10 +86,10 @@ public class MatrixZeroHandler {
         boolean firstColumnHasZeros = this.checkColumnForZero(0);
         this.flagFirstRowAndColumn();
         this.changeRemainingMatrix();
-        if(firstRowHasZeros) {
+        if (firstRowHasZeros) {
             this.changeFirstRow();
         }
-        if(firstColumnHasZeros) {
+        if (firstColumnHasZeros) {
             this.changeFirstColumn();
         }
     }
@@ -153,24 +161,22 @@ public class MatrixZeroHandler {
 
     /**
      * This method changes  the First row to zero
-     *
      */
     public void changeFirstRow() {
         int columns = matrix[0].length;
-            for (int i = 0; i < columns; i++) {
-                matrix[0][i] = 0;
+        for (int i = 0; i < columns; i++) {
+            matrix[0][i] = 0;
         }
     }
 
     /**
      * This method changes the First column to zero
-     *
      */
     public void changeFirstColumn() {
         int rows = matrix.length;
-            for (int i = 0; i < rows; i++) {
-                matrix[i][0] = 0;
-            }
+        for (int i = 0; i < rows; i++) {
+            matrix[i][0] = 0;
+        }
     }
 
     /**
@@ -179,12 +185,12 @@ public class MatrixZeroHandler {
     public void printMatrix() {
         int rows = matrix.length;
         int columns = matrix[0].length;
-        String outputMatrix=new String("\n");
+        String outputMatrix = "\n";
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                outputMatrix+=matrix[i][j] + " ";
+                outputMatrix += matrix[i][j] + " ";
             }
-            outputMatrix+='\n';
+            outputMatrix += '\n';
         }
 
         LOGGER.info(outputMatrix);
@@ -195,14 +201,3 @@ public class MatrixZeroHandler {
 }
 
 
-/**
-
- Auxiliary Space complexity O(1);
- No extra space used other than matrix Space.
-
-
- Practices used:
- Function should do only one thing
- every function is small
- Function arguments are less than 3
- */
