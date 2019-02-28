@@ -54,8 +54,12 @@ public class MatrixChanger {
         boolean firstColumnHasZeros = this.checkColumnForZero(0);
         this.flagFirstRowAndColumn();
         this.changeRemainingMatrix();
-        this.changeFirstRow(firstRowHasZeros);
-        this.changeFirstColumn(firstColumnHasZeros);
+        if(firstRowHasZeros) {
+            this.changeFirstRow();
+        }
+        if(firstColumnHasZeros) {
+            this.changeFirstColumn();
+        }
     }
 
     /**
@@ -124,31 +128,25 @@ public class MatrixChanger {
 
 
     /**
-     * This method changes  the First row to zero if rowFlag was true
+     * This method changes  the First row to zero
      *
-     * @param rowFlag
      */
-    public void changeFirstRow(boolean rowFlag) {
+    public void changeFirstRow() {
         int columns = matrix[0].length;
-        if (rowFlag) {
             for (int i = 0; i < columns; i++) {
                 matrix[0][i] = 0;
-            }
         }
     }
 
     /**
-     * This method changes the First column to zero if colFlag is true
+     * This method changes the First column to zero
      *
-     * @param colFlag
      */
-    public void changeFirstColumn(boolean colFlag) {
+    public void changeFirstColumn() {
         int rows = matrix.length;
-        if (colFlag) {
             for (int i = 0; i < rows; i++) {
                 matrix[i][0] = 0;
             }
-        }
     }
 
     /**
@@ -175,5 +173,11 @@ public class MatrixChanger {
 /**
 
  Auxiliary Space complexity O(1);
+ No extra space used other than matrix Space.
 
+
+ Practices used:
+ Function should do only one thing
+ every function is small
+ Function arguments are less than 3
  */
