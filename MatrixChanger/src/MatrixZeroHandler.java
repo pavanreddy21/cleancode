@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 /**
  * Auxiliary Space complexity O(1);
- * No extra space used other than matrix Space.
+ * No extra space used other than given matrix Space.
  * <p>
  * <p>
  * Practices used:
